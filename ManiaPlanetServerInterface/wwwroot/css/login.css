@@ -1,0 +1,40 @@
+﻿.pin-digit-input {
+    height: 50px;
+    width: 40px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #DDDDDD;
+}
+
+    .pin-digit-input:focus {
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+
+#pininput {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#openmodal {
+    display: none;
+}
+
+
+body {
+    height: 100%;
+    display: none;
+}
+
+html {
+    height: 100%;
+    font-family: "Arial", "Times New Roman", sans-serif;
+}
