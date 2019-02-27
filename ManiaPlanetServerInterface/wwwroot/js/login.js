@@ -37,10 +37,13 @@ function onload() {
 
         //Clear text field on backspace and go one field to the left
         if (e.key === "Backspace") {
-            $('#digit-' + currindex).val("");
-            if (currindex > 1) {
-                $('#digit-' + (currindex - 1)).focus();
-            }
+                $('#digit-' + currindex).val("");
+                if (currindex > 1) {
+                    $('#digit-' + (currindex - 1)).focus();
+                    if ('#digit-' + currindex.val() !== "") {
+                        $('#digit-' + (currindex - 1)).val("");
+                    }
+                }
         } else {
             //Fill text field with pressed key and go one field to the right
             if (e.key.match(/^[0-9]$/g) !== null) {

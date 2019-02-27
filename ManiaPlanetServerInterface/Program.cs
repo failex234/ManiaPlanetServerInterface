@@ -12,6 +12,7 @@ namespace ManiaPlanetServerInterface
 {
     public class Program
     {
+        public static Cache.Cache Cache = new Cache.Cache();
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
